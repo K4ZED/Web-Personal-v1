@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenza Athallah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome untuk icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="grid">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="img/Kenza_Athallah.jpg" alt="Kenza Athallah">
+                    <h1>Kenza Athallah</h1>
+                    <p class="title">Data Analyst</p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kenzaathallah.wijaya@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 815-7933-400</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Maret 28, 2005</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Solo, Central Java, Indonesia</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kenzaathallah/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/kazed05_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/K4ZED"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>My name is Kenza Athallah, a Software Engineering (RPL) graduate and a Data Science enthusiast currently pursuing a Bachelor's degree in the field. My internship experience as a Data Analyst has helped me build strong technical skills in programming, statistical analysis, and database management using tools like SQL Server and Python. I am passionate about analyzing data and transforming it into actionable insights to support decision-making processes.</p>
+                    <p>In addition to my technical expertise, I have a solid background in design, focusing on UI design using Adobe Illustrator, Photoshop, Canva, and Figma. This combination of analytical and creative skills enables me to approach problems from a unique perspective. I am committed to contributing as a skilled Data Analyst, continuously improving my abilities, and delivering impactful results for the organizations I work with.</p>
+                </section>
+
+                <section class="services">
+                    <h2>Areas of Interest</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Web Design</h3>
+                            </div>
+                            <p>Creating modern and responsive web designs with attention to user experience and visual appeal.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-header">
+                                <i class="fas fa-palette"></i>
+                                <h3>Designer</h3>
+                            </div>
+                            <p>Crafting creative designs using Adobe Illustrator, Photoshop, Canva, and Figma.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Web Development</h3>
+                            </div>
+                            <p>Developing high-quality websites and web applications using modern technologies.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-header">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Data Analyst</h3>
+                            </div>
+                            <p>Analyzing data and creating insights using SQL, Python, and various analytical tools.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="clients">
+                    <h2>Clients</h2>
+                    <div class="clients-grid">
+                        <div class="client-logo">
+                            <img src="img/Cardinal.png" alt="Client 1">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/Wonderland.png" alt="Client 2">
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/Luwes Group.png" alt="Client 3">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.querySelector('.scroll-progress-bar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
